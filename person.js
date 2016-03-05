@@ -1,3 +1,6 @@
+// use "this" keyword to reference public properties and methods of current objects
+// to make it private, within lexical scope, use var instead
+
 var Person = function(firstAndLast) {
 	
 	var fullName = firstAndLast; // Bob Ross
@@ -30,7 +33,9 @@ var Person = function(firstAndLast) {
 
 var bob = new Person('Bob Ross');
 
-bob.setFirstName("Haskell")
+// bob.getFullName() should return "Haskell Ross" 
+// after bob.setFirstName("Haskell").
+
 console.log(bob.getFullName())
 
 
