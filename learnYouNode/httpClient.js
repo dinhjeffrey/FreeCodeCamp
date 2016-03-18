@@ -10,3 +10,17 @@ http.get(process.argv[2], function(response){
 	response.on('error', console.error)
 })
 
+/* passing the function inline as anonymous function
+response.on('data', function(data){ // anonymous function passed inline
+    console.log(data);
+});
+*/
+
+/* is the same as defining them outside and passing them by names
+...
+response.on('data', callback)
+...
+function callback(data){ // < named function defined outside
+    console.log(data);
+}
+*/    
