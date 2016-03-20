@@ -1,7 +1,7 @@
 var net = require('net')
 
 function add0(number) {
-     return number < 10 ? '0' + number : number;
+    return number < 10 ? '0' + number : number;
 }
 // "2013-07-06 17:42"  
 
